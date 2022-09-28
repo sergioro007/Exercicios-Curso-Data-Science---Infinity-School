@@ -2,6 +2,10 @@ import streamlit as st
 
 st.title('Sitema X')
 
-title = st.text_input('Digite seu nome: ')
+nome = st.text_input('Digite seu nome: ')
 
-st.write('Bem-vindo(a), ', title)
+if nome != "":
+    st.write('Bem-vindo(a), ', nome)
+else:
+    st.write('')
+
